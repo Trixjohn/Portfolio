@@ -124,3 +124,235 @@ a:hover{
 }
 
 .hamburger-icon span
+
+/*SECTION*/
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing:border-box;
+    min-height: fit-content; 
+}
+.section-container{
+    display: flex;
+}
+
+/*Profile*/
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+
+}
+
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+
+}
+
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+
+}
+
+.section__text__p1{
+    text-align: center;
+
+}
+
+.section__text__p2s{
+    font-size: 1.75rem;
+    margin-bottom:1rem ;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+
+/*ICON*/
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+/*button*/
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+.btn-color-1, .btn-color-2{
+    border: rgb(53, 53, 53) 0.1rem solid;   
+}
+.btn-color-1:hover, 
+.btn-color-2:hover{
+   cursor: pointer;
+}
+.btn-color-1:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.btn-color-1{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.btn-color-2{
+    background: none;
+    color: black;
+}
+.btn-color-2:hover{
+    border: rgb(255, 255, 255) 0.1rem solid;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.btn-container{
+    gap: 1rem;
+}
+
+/*ABOUT SECTION*/
+
+#about {
+    position: relative;
+    padding-top: 8rem;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: 2rem; 
+    
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color:rgb(163, 163, 163) ;
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: auto;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+
+/* SKILLS SECTION */c
+.article_container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 1rem;
+    align-items: start;
+    margin: 1rem auto;
+    max-width: 900px;
+    justify-items: center;
+}
+
+/* each skill row */
+.article_container article{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    min-height: 64px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+/* icon sizing inside the article */
+.article_container article .icon{
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+}
+
+/* text block inside the article */
+.article_container article h3{
+    margin: 0;
+    font-size: 1rem;
+}
+.article_container article p{
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgb(85,85,85);
+}
+
+/* hover effect */
+.article_container article:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+/* small-screen spacing tweak */
+@media (max-width: 520px){
+    .article_container{
+        gap: 0.6rem;
+    }
+    .article_container article{
+        padding: 0.6rem;
+    }
+}
+
+
